@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DanweiActivity"
+    tools:showIn="@layout/activity_danwei"
+    android:background="#c1e4e9">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_danwei"
+        android:layout_margin="20dp"
+        android:textSize="25pt"
+        android:textColor="#192f60"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="转换前单位"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:id="@+id/txt_before"
+            android:inputType="numberDecimal"
+            android:textSize="10pt"
+            android:textColor="#192f60"/>
+
+        <TextView
+            android:text="转换后单位"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:id="@+id/txt_after"
+            android:textSize="10pt"
+            android:textColor="#192f60"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/before_danwei"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:entries="@array/unit_danwei" />
+
+        <Spinner
+            android:id="@+id/after_danwei"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:entries="@array/unit_danwei" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/swap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="转换"
+        android:background="@drawable/function"
+        android:textSize="10pt"
+        android:textColor="#bbc8e6"/>
+
+    <TextView
+        android:id="@+id/result_danwei"
+        android:textSize="25pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="#192f60"/>
+</LinearLayout>

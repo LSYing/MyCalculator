@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_insterest">InsterestActivity</string>
+    <string name="title_activity_more_activyty">MoreActivyty</string>
+    <string name="title_activity_danwei">DanweiActivity</string>
+    <string name="title_activity_jinzhi">JinzhiActivity</string>
+</resources>
